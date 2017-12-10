@@ -28,7 +28,9 @@ componentWillMount(){
 }
 
 handleAddProject(project){
-    console.log(project);
+    let projects = this.state.projects;
+    projects.push(project);
+    this.setState({projects:projects});
 }
     render() {
         return ( < div className = "App" >
